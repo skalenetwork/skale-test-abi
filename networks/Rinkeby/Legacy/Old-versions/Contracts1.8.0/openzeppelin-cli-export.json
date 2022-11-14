@@ -1,0 +1,266 @@
+{
+  "networks": {
+    "rinkeby": {
+      "proxies": {
+        "skale-manager/ContractManager": [
+          {
+            "address": "0x146a4CD68D5bC1F2b3d638b6822C098BB211A055",
+            "version": "1.0.0",
+            "implementation": "0x8F21950d5E8c44F86C62BC8d1c3ebAcAC403ccD0",
+            "admin": "0xA63988d69F5b27a7cFF789C15BA45e16E74DFB1A",
+            "kind": "Upgradeable"
+          }
+        ],
+        "skale-manager/DelegationController": [
+          {
+            "address": "0xb8d70B837820651f1bD04bFFA7Fc061A474fc09b",
+            "version": "1.0.0",
+            "implementation": "0xd2b82bC43823235c04ad2e9156923aA385DA8cf4",
+            "admin": "0xA63988d69F5b27a7cFF789C15BA45e16E74DFB1A",
+            "kind": "Upgradeable"
+          }
+        ],
+        "skale-manager/DelegationPeriodManager": [
+          {
+            "address": "0x7BC6e796703536336df7521cF7a923E8F7d36DA6",
+            "version": "1.0.0",
+            "implementation": "0xb65Cb1dC6E1b44DE02D23E6710cf162740f175FD",
+            "admin": "0xA63988d69F5b27a7cFF789C15BA45e16E74DFB1A",
+            "kind": "Upgradeable"
+          }
+        ],
+        "skale-manager/Distributor": [
+          {
+            "address": "0x6a2a3a546Bf4065678bc68f4815E09ABac5A28c1",
+            "version": "1.0.0",
+            "implementation": "0x15Ed1035aaD003447d93b67387764cc04143400e",
+            "admin": "0xA63988d69F5b27a7cFF789C15BA45e16E74DFB1A",
+            "kind": "Upgradeable"
+          }
+        ],
+        "skale-manager/Punisher": [
+          {
+            "address": "0x570c6fC36FF647d2dFcf87073a08a074c8030CC9",
+            "version": "1.0.0",
+            "implementation": "0xF3518f681E1c3AA1505d27b012391e454cb0A1F6",
+            "admin": "0xA63988d69F5b27a7cFF789C15BA45e16E74DFB1A",
+            "kind": "Upgradeable"
+          }
+        ],
+        "skale-manager/SlashingTable": [
+          {
+            "address": "0xae8f934578885F472b77A7E1507f7D7ECBa64dc7",
+            "version": "1.0.0",
+            "implementation": "0x4A495FA786b6732CeBfeC5f7790e25022F5F59a6",
+            "admin": "0xA63988d69F5b27a7cFF789C15BA45e16E74DFB1A",
+            "kind": "Upgradeable"
+          }
+        ],
+        "skale-manager/TimeHelpers": [
+          {
+            "address": "0xD1c4c9256DDDD6f7fAb30e2081450Dd54843c56e",
+            "version": "1.0.0",
+            "implementation": "0xa076bc24F15BB917fD03D6c9a94cA4ecD4122707",
+            "admin": "0xA63988d69F5b27a7cFF789C15BA45e16E74DFB1A",
+            "kind": "Upgradeable"
+          }
+        ],
+        "skale-manager/TokenLaunchLocker": [
+          {
+            "address": "0xDeA99592352f33816ED437A45045460077790095",
+            "version": "1.0.0",
+            "implementation": "0x7281c9f55e09bDFE15aABaFB847a718a1CCf2A74",
+            "admin": "0xA63988d69F5b27a7cFF789C15BA45e16E74DFB1A",
+            "kind": "Upgradeable"
+          }
+        ],
+        "skale-manager/TokenLaunchManager": [
+          {
+            "address": "0xC9ED65f89f08E16F6de8d629B567E51Ce145C432",
+            "version": "1.0.0",
+            "implementation": "0xdFDDa072E31D70A383bFaF4b6e4e2E8E21F7b262",
+            "admin": "0xA63988d69F5b27a7cFF789C15BA45e16E74DFB1A",
+            "kind": "Upgradeable"
+          }
+        ],
+        "skale-manager/TokenState": [
+          {
+            "address": "0x2Af41D8aa5ff7681C4C7400E6C49362f629d4A6C",
+            "version": "1.0.0",
+            "implementation": "0x3B85590EA04216Eec07AF2F9577F138eaE158905",
+            "admin": "0xA63988d69F5b27a7cFF789C15BA45e16E74DFB1A",
+            "kind": "Upgradeable"
+          }
+        ],
+        "skale-manager/ValidatorService": [
+          {
+            "address": "0x051B8e53f1C286AdB86E4f544dBc5C756139fC40",
+            "version": "1.0.0",
+            "implementation": "0xe52a2e57D1A08d8a1c0Bab84519e52A51bf2E693",
+            "admin": "0xA63988d69F5b27a7cFF789C15BA45e16E74DFB1A",
+            "kind": "Upgradeable"
+          }
+        ],
+        "skale-manager/ConstantsHolder": [
+          {
+            "address": "0x343F706Ff10973735e1FBAADAf037Ff447F4f18f",
+            "version": "1.0.0",
+            "implementation": "0x2dF6Cc061BAE1BF8065ab9Fcb5814cEAf80b6382",
+            "admin": "0xA63988d69F5b27a7cFF789C15BA45e16E74DFB1A",
+            "kind": "Upgradeable"
+          }
+        ],
+        "skale-manager/Nodes": [
+          {
+            "address": "0x50646828780ad85493393658c743cD1263B482c0",
+            "version": "1.0.0",
+            "implementation": "0xb0bB559d660A6D9C4b8c66a95Cd6833c687BD953",
+            "admin": "0xA63988d69F5b27a7cFF789C15BA45e16E74DFB1A",
+            "kind": "Upgradeable"
+          }
+        ],
+        "skale-manager/NodeRotation": [
+          {
+            "address": "0xd25b43aA09a72d77751bb1614929eC56d00449f2",
+            "version": "1.0.0",
+            "implementation": "0xDc8092816a5c4d3f0635d62b677Eaa1f109e08c3",
+            "admin": "0xA63988d69F5b27a7cFF789C15BA45e16E74DFB1A",
+            "kind": "Upgradeable"
+          }
+        ],
+        "skale-manager/Monitors": [
+          {
+            "address": "0x425aE9c0cf057D67272aF061b723999965DEA970",
+            "version": "1.0.0",
+            "implementation": "0x87B31ec07835c50Eb54fe4a2eA82F4b10cb7394A",
+            "admin": "0xA63988d69F5b27a7cFF789C15BA45e16E74DFB1A",
+            "kind": "Upgradeable"
+          }
+        ],
+        "skale-manager/SchainsInternal": [
+          {
+            "address": "0x47758A11f09751db38f14e9cbeB7241eDdC7bee2",
+            "version": "1.0.0",
+            "implementation": "0x862054f0608640FEBE124881D3519B872eEbFFe6",
+            "admin": "0xA63988d69F5b27a7cFF789C15BA45e16E74DFB1A",
+            "kind": "Upgradeable"
+          }
+        ],
+        "skale-manager/Schains": [
+          {
+            "address": "0xcB504f4e8D31d484B765c115dd1E5667eb0FD5f2",
+            "version": "1.0.0",
+            "implementation": "0xDce0929486416044086d8D26138c4aD79Bd77734",
+            "admin": "0xA63988d69F5b27a7cFF789C15BA45e16E74DFB1A",
+            "kind": "Upgradeable"
+          }
+        ],
+        "skale-manager/Decryption": [
+          {
+            "address": "0x53088EF81686cA817ECEd7fc613c888DbaC150cE",
+            "version": "1.0.0",
+            "implementation": "0x12Df28Cda441007C94ce4ed3BB873ce722E84783",
+            "admin": "0xA63988d69F5b27a7cFF789C15BA45e16E74DFB1A",
+            "kind": "Upgradeable"
+          }
+        ],
+        "skale-manager/ECDH": [
+          {
+            "address": "0x5851b0A3B98A54FD20C25F31F64896AB82a808FC",
+            "version": "1.0.0",
+            "implementation": "0x3D59f4eff34961d683DC118E40DCC42eF4165989",
+            "admin": "0xA63988d69F5b27a7cFF789C15BA45e16E74DFB1A",
+            "kind": "Upgradeable"
+          }
+        ],
+        "skale-manager/KeyStorage": [
+          {
+            "address": "0x401DC517E2F0b7050973c76ad768Cd2f34E71907",
+            "version": "1.0.0",
+            "implementation": "0x9d1D91Eb8c6A90bf5995c58d0C5ba2A594A15ea7",
+            "admin": "0xA63988d69F5b27a7cFF789C15BA45e16E74DFB1A",
+            "kind": "Upgradeable"
+          }
+        ],
+        "skale-manager/SkaleDKG": [
+          {
+            "address": "0x8F505A74D5F9ab1C22563DF18058983B5772F834",
+            "version": "1.0.0",
+            "implementation": "0x59d441A75B76A98Ff5ccDe57c84De9b72D06cc2a",
+            "admin": "0xA63988d69F5b27a7cFF789C15BA45e16E74DFB1A",
+            "kind": "Upgradeable"
+          }
+        ],
+        "skale-manager/SkaleVerifier": [
+          {
+            "address": "0x2E0905BdC71942c14a485c6C2A147556B5A33119",
+            "version": "1.0.0",
+            "implementation": "0x93321C714174dFe2957CDc1A5C1756A1BB1BC502",
+            "admin": "0xA63988d69F5b27a7cFF789C15BA45e16E74DFB1A",
+            "kind": "Upgradeable"
+          }
+        ],
+        "skale-manager/SkaleManager": [
+          {
+            "address": "0x9cF02B3FE50E222C8cbe9Ed8657fC1651A94B178",
+            "version": "1.0.0",
+            "implementation": "0x99215306A75284eBdCb6cA7DDD474D6d31552d79",
+            "admin": "0xA63988d69F5b27a7cFF789C15BA45e16E74DFB1A",
+            "kind": "Upgradeable"
+          }
+        ],
+        "skale-manager/Pricing": [
+          {
+            "address": "0x4e2D0A19Ce819d164F22aF79DFaAa8A52bB18471",
+            "version": "1.0.0",
+            "implementation": "0xf31fC56d21FD3DA18654aE7EFE18eCCC33fB0eAC",
+            "admin": "0xA63988d69F5b27a7cFF789C15BA45e16E74DFB1A",
+            "kind": "Upgradeable"
+          }
+        ],
+        "skale-manager/Bounty": [
+          {
+            "address": "0x6BF57048cE4CE91db8Baa3D0096BE3f86d8bF815",
+            "version": "1.0.0",
+            "implementation": "0x42970e6De40a89FA826f7A88Ba70b82854F8c8C1",
+            "admin": "0xA63988d69F5b27a7cFF789C15BA45e16E74DFB1A",
+            "kind": "Upgradeable"
+          }
+        ],
+        "skale-manager/TimeHelpersWithDebug": [
+          {
+            "address": "0xCAf5e4B1328A2701D96A334863Ed6a32b6E48291",
+            "version": "1.0.0",
+            "implementation": "0xa7950046e2d142c25245b0E26A079Fd6d322DBd5",
+            "admin": "0xA63988d69F5b27a7cFF789C15BA45e16E74DFB1A",
+            "kind": "Upgradeable"
+          }
+        ],
+        "skale-manager/BountyV2": [
+          {
+            "address": "0x5d3Ca70b88Cbd5b4aCa2631F51205Fa637085d88",
+            "version": "1.0.0",
+            "implementation": "0x5d5a64487C731721A5b8568B790BEAF1b7262e1c",
+            "admin": "0xA63988d69F5b27a7cFF789C15BA45e16E74DFB1A",
+            "kind": "Upgradeable"
+          }
+        ]
+      }
+    }
+  },
+  "compiler": {
+    "manager": "openzeppelin",
+    "compilerSettings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": "200"
+      }
+    },
+    "solcVersion": "0.6.10",
+    "artifactsDir": "build/contracts",
+    "contractsDir": "contracts",
+    "typechain": {
+      "enabled": false
+    }
+  }
+}
