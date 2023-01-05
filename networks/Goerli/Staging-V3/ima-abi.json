@@ -2710,6 +2710,24 @@
         },
         {
             "type": "function",
+            "name": "depositDirect",
+            "constant": false,
+            "stateMutability": "payable",
+            "payable": true,
+            "inputs": [
+                {
+                    "type": "string",
+                    "name": "schainName"
+                },
+                {
+                    "type": "address",
+                    "name": "receiver"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "type": "function",
             "name": "disableActiveEthTransfers",
             "constant": false,
             "payable": false,
@@ -3649,6 +3667,31 @@
                 {
                     "type": "uint256",
                     "name": "amount"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "type": "function",
+            "name": "depositERC20Direct",
+            "constant": false,
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "string",
+                    "name": "schainName"
+                },
+                {
+                    "type": "address",
+                    "name": "erc20OnMainnet"
+                },
+                {
+                    "type": "uint256",
+                    "name": "amount"
+                },
+                {
+                    "type": "address",
+                    "name": "receiver"
                 }
             ],
             "outputs": []
@@ -4763,6 +4806,31 @@
         },
         {
             "type": "function",
+            "name": "depositERC721Direct",
+            "constant": false,
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "string",
+                    "name": "schainName"
+                },
+                {
+                    "type": "address",
+                    "name": "erc721OnMainnet"
+                },
+                {
+                    "type": "uint256",
+                    "name": "tokenId"
+                },
+                {
+                    "type": "address",
+                    "name": "receiver"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "type": "function",
             "name": "disableWhitelist",
             "constant": false,
             "payable": false,
@@ -5563,6 +5631,64 @@
         },
         {
             "type": "function",
+            "name": "depositERC1155BatchDirect",
+            "constant": false,
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "string",
+                    "name": "schainName"
+                },
+                {
+                    "type": "address",
+                    "name": "erc1155OnMainnet"
+                },
+                {
+                    "type": "uint256[]",
+                    "name": "ids"
+                },
+                {
+                    "type": "uint256[]",
+                    "name": "amounts"
+                },
+                {
+                    "type": "address",
+                    "name": "receiver"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "type": "function",
+            "name": "depositERC1155Direct",
+            "constant": false,
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "string",
+                    "name": "schainName"
+                },
+                {
+                    "type": "address",
+                    "name": "erc1155OnMainnet"
+                },
+                {
+                    "type": "uint256",
+                    "name": "id"
+                },
+                {
+                    "type": "uint256",
+                    "name": "amount"
+                },
+                {
+                    "type": "address",
+                    "name": "receiver"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "type": "function",
             "name": "disableWhitelist",
             "constant": false,
             "payable": false,
@@ -6219,6 +6345,18 @@
         {
             "type": "event",
             "anonymous": false,
+            "name": "Initialized",
+            "inputs": [
+                {
+                    "type": "uint8",
+                    "name": "version",
+                    "indexed": false
+                }
+            ]
+        },
+        {
+            "type": "event",
+            "anonymous": false,
             "name": "RoleAdminChanged",
             "inputs": [
                 {
@@ -6389,6 +6527,31 @@
                 {
                     "type": "uint256",
                     "name": "tokenId"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "type": "function",
+            "name": "depositERC721Direct",
+            "constant": false,
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "string",
+                    "name": "schainName"
+                },
+                {
+                    "type": "address",
+                    "name": "erc721OnMainnet"
+                },
+                {
+                    "type": "uint256",
+                    "name": "tokenId"
+                },
+                {
+                    "type": "address",
+                    "name": "receiver"
                 }
             ],
             "outputs": []
@@ -6707,23 +6870,6 @@
                 {
                     "type": "address",
                     "name": "newContractManagerOfSkaleManager"
-                }
-            ],
-            "outputs": []
-        },
-        {
-            "type": "function",
-            "name": "initializeAllTokensForSchain",
-            "constant": false,
-            "payable": false,
-            "inputs": [
-                {
-                    "type": "string",
-                    "name": "schainName"
-                },
-                {
-                    "type": "address[]",
-                    "name": "tokens"
                 }
             ],
             "outputs": []
