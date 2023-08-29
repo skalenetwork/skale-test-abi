@@ -3860,6 +3860,25 @@
         },
         {
             "type": "function",
+            "name": "getValidatorIdByNodeAddressWithoutRevert",
+            "constant": true,
+            "stateMutability": "view",
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "address",
+                    "name": "nodeAddress"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "uint256",
+                    "name": "validatorId"
+                }
+            ]
+        },
+        {
+            "type": "function",
             "name": "grantRole",
             "constant": false,
             "payable": false,
