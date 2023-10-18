@@ -147,6 +147,57 @@
                 }
             ]
         },
+{
+            "type": "event",
+            "anonymous": false,
+            "name": "PreviousMessageReference",
+            "inputs": [
+                {
+                    "type": "uint256",
+                    "name": "currentMessage",
+                    "indexed": false
+                },
+                {
+                    "type": "uint256",
+                    "name": "previousOutgoingMessageBlockId",
+                    "indexed": false
+                }
+            ]
+        },
+        {
+            "type": "event",
+            "anonymous": false,
+            "name": "ReimbursedContractAdded",
+            "inputs": [
+                {
+                    "type": "bytes32",
+                    "name": "schainHash",
+                    "indexed": true
+                },
+                {
+                    "type": "address",
+                    "name": "contractAddress",
+                    "indexed": false
+                }
+            ]
+        },
+        {
+            "type": "event",
+            "anonymous": false,
+            "name": "ReimbursedContractRemoved",
+            "inputs": [
+                {
+                    "type": "bytes32",
+                    "name": "schainHash",
+                    "indexed": true
+                },
+                {
+                    "type": "address",
+                    "name": "contractAddress",
+                    "indexed": false
+                }
+            ]
+        },
         {
             "type": "event",
             "anonymous": false,
@@ -379,6 +430,23 @@
             ],
             "outputs": []
         },
+{
+            "type": "function",
+            "name": "addReimbursedContract",
+            "constant": false,
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "string",
+                    "name": "schainName"
+                },
+                {
+                    "type": "address",
+                    "name": "reimbursedContract"
+                }
+            ],
+            "outputs": []
+        },
         {
             "type": "function",
             "name": "communityPool",
@@ -417,6 +485,10 @@
                 {
                     "type": "bool",
                     "name": "inited"
+},
+                {
+                    "type": "uint256",
+                    "name": "lastOutgoingMessageBlockId"
                 }
             ]
         },
@@ -513,6 +585,25 @@
                 }
             ]
         },
+{
+            "type": "function",
+            "name": "getLastOutgoingMessageBlockId",
+            "constant": true,
+            "stateMutability": "view",
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "string",
+                    "name": "targetSchainName"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "uint256",
+                    "name": ""
+                }
+            ]
+        },
         {
             "type": "function",
             "name": "getOutgoingMessagesCounter",
@@ -529,6 +620,52 @@
                 {
                     "type": "uint256",
                     "name": ""
+                }
+            ]
+        },
+{
+            "type": "function",
+            "name": "getReimbursedContractsLength",
+            "constant": true,
+            "stateMutability": "view",
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "bytes32",
+                    "name": "schainHash"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "uint256",
+                    "name": ""
+                }
+            ]
+        },
+        {
+            "type": "function",
+            "name": "getReimbursedContractsRange",
+            "constant": true,
+            "stateMutability": "view",
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "bytes32",
+                    "name": "schainHash"
+                },
+                {
+                    "type": "uint256",
+                    "name": "from"
+                },
+                {
+                    "type": "uint256",
+                    "name": "to"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "address[]",
+                    "name": "contractsInRange"
                 }
             ]
         },
@@ -748,6 +885,29 @@
                 {
                     "type": "bytes32",
                     "name": "schainHash"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "bool",
+                    "name": ""
+                }
+            ]
+        },
+{
+            "type": "function",
+            "name": "isReimbursedContract",
+            "constant": true,
+            "stateMutability": "view",
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "bytes32",
+                    "name": "schainHash"
+                },
+                {
+                    "type": "address",
+                    "name": "contractAddress"
                 }
             ],
             "outputs": [
@@ -987,6 +1147,23 @@
                 {
                     "type": "address",
                     "name": "extraContract"
+                }
+            ],
+            "outputs": []
+        },
+{
+            "type": "function",
+            "name": "removeReimbursedContract",
+            "constant": false,
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "string",
+                    "name": "schainName"
+                },
+                {
+                    "type": "address",
+                    "name": "reimbursedContract"
                 }
             ],
             "outputs": []
@@ -1363,6 +1540,25 @@
             "outputs": [
                 {
                     "type": "uint256",
+                    "name": ""
+                }
+            ]
+        },
+{
+            "type": "function",
+            "name": "getSchainContract",
+            "constant": true,
+            "stateMutability": "view",
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "bytes32",
+                    "name": "schainHash"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "address",
                     "name": ""
                 }
             ]
@@ -2063,6 +2259,25 @@
             "outputs": [
                 {
                     "type": "uint256",
+                    "name": ""
+                }
+            ]
+        },
+{
+            "type": "function",
+            "name": "getSchainContract",
+            "constant": true,
+            "stateMutability": "view",
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "bytes32",
+                    "name": "schainHash"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "address",
                     "name": ""
                 }
             ]
@@ -2891,6 +3106,25 @@
             "outputs": [
                 {
                     "type": "uint256",
+                    "name": ""
+                }
+            ]
+        },
+{
+            "type": "function",
+            "name": "getSchainContract",
+            "constant": true,
+            "stateMutability": "view",
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "bytes32",
+                    "name": "schainHash"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "address",
                     "name": ""
                 }
             ]
@@ -3957,6 +4191,25 @@
                 }
             ]
         },
+{
+            "type": "function",
+            "name": "getSchainContract",
+            "constant": true,
+            "stateMutability": "view",
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "bytes32",
+                    "name": "schainHash"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "address",
+                    "name": ""
+                }
+            ]
+        },
         {
             "type": "function",
             "name": "getSchainToAllERC20",
@@ -4968,6 +5221,25 @@
                 }
             ]
         },
+{
+            "type": "function",
+            "name": "getSchainContract",
+            "constant": true,
+            "stateMutability": "view",
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "bytes32",
+                    "name": "schainHash"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "address",
+                    "name": ""
+                }
+            ]
+        },
         {
             "type": "function",
             "name": "getSchainToAllERC721",
@@ -5826,6 +6098,25 @@
             "outputs": [
                 {
                     "type": "uint256",
+                    "name": ""
+                }
+            ]
+        },
+{
+            "type": "function",
+            "name": "getSchainContract",
+            "constant": true,
+            "stateMutability": "view",
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "bytes32",
+                    "name": "schainHash"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "address",
                     "name": ""
                 }
             ]
@@ -6691,6 +6982,25 @@
             "outputs": [
                 {
                     "type": "uint256",
+                    "name": ""
+                }
+            ]
+        },
+{
+            "type": "function",
+            "name": "getSchainContract",
+            "constant": true,
+            "stateMutability": "view",
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "bytes32",
+                    "name": "schainHash"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "address",
                     "name": ""
                 }
             ]
