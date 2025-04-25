@@ -1,3 +1,3 @@
-# skale-testnet
-List of all skale testnets
+# skale-test-abi
+List of QA and Debnet skale networks ABI
 
