@@ -1,5 +1,5 @@
 {
-    "contract_manager_address": "0x3163561AAA8418BE1Bad9e4b698e39810565321a",
+    "contract_manager_address": "0x6B371Ca8dE636e6955f5e100847E8DfF04Ac99bb",
     "contract_manager_abi": [
         {
             "type": "event",
@@ -370,7 +370,7 @@
             "outputs": []
         }
     ],
-    "delegation_controller_address": "0xAe5A9a6065a53BCce9B4dfA14489C85f7D4887b6",
+    "delegation_controller_address": "0x79452cC135eBA74a6732939990fd9Cb59e34dA66",
     "delegation_controller_abi": [
         {
             "type": "event",
@@ -1283,7 +1283,7 @@
             "outputs": []
         }
     ],
-    "delegation_period_manager_address": "0xA8EA49Dc101e14d17b5379c210c0bDD5e988e808",
+    "delegation_period_manager_address": "0xD8f47F7a5d312b39101B250244496D59a092f0B9",
     "delegation_period_manager_abi": [
         {
             "type": "event",
@@ -1604,8 +1604,33 @@
             ]
         }
     ],
-    "distributor_address": "0xFbeE7e4E80AE7ea7c991AA8CA90743ae81b2Fc10",
+    "distributor_address": "0x4e3852cd591f8a07882e1e48Ce8c74adDB147503",
     "distributor_abi": [
+        {
+            "type": "error",
+            "name": "BountyIsLocked",
+            "inputs": []
+        },
+        {
+            "type": "error",
+            "name": "DataLengthIsIncorrect",
+            "inputs": []
+        },
+        {
+            "type": "error",
+            "name": "FeeIsLocked",
+            "inputs": []
+        },
+        {
+            "type": "error",
+            "name": "ReceiverIsIncorrect",
+            "inputs": []
+        },
+        {
+            "type": "error",
+            "name": "TokensTransferFailure",
+            "inputs": []
+        },
         {
             "type": "event",
             "anonymous": false,
@@ -2057,7 +2082,7 @@
             "outputs": []
         }
     ],
-    "punisher_address": "0x038cAFE1058155927849B1888f99d0d0E0680944",
+    "punisher_address": "0xF11a6EE55e65E229cc437B36155f027fFf7F09Ca",
     "punisher_abi": [
         {
             "type": "event",
@@ -2427,7 +2452,7 @@
             "outputs": []
         }
     ],
-    "slashing_table_address": "0xD2bc2379a763f76b5decCacBf487306c06Cd9440",
+    "slashing_table_address": "0xDEc6036AC5b16642588a454DF5d69D700836CB09",
     "slashing_table_abi": [
         {
             "type": "event",
@@ -2734,7 +2759,7 @@
             "outputs": []
         }
     ],
-    "time_helpers_address": "0x2F11303Ffa2F4656D994183Ddee14674fEce067c",
+    "time_helpers_address": "0x86Ac286484322B1D56f120Fe048166Cd9D37A434",
     "time_helpers_abi": [
         {
             "type": "function",
@@ -2900,7 +2925,7 @@
             ]
         }
     ],
-    "token_state_address": "0x0a04aA6Eb1BDfb887c1AEdF753f9a39E62B715B8",
+    "token_state_address": "0x6f7191D93A71Ba7216F7828f5Bc706cC8954880F",
     "token_state_abi": [
         {
             "type": "event",
@@ -3235,8 +3260,208 @@
             "outputs": []
         }
     ],
-    "validator_service_address": "0x573E2530C9d3D5E548ccb8b4EA9d00F791574119",
+    "validator_service_address": "0x0E642d151B0BAfeC6e67e503E8010Dbb95D71165",
     "validator_service_abi": [
+        {
+            "type": "error",
+            "name": "AcceptingRequestIsAlreadyDisabled",
+            "inputs": [
+                {
+                    "type": "uint256",
+                    "name": "validatorId"
+                }
+            ]
+        },
+        {
+            "type": "error",
+            "name": "AcceptingRequestIsAlreadyEnabled",
+            "inputs": [
+                {
+                    "type": "uint256",
+                    "name": "validatorId"
+                }
+            ]
+        },
+        {
+            "type": "error",
+            "name": "AddressIsAlreadyInUse",
+            "inputs": [
+                {
+                    "type": "address",
+                    "name": "validatorAddress"
+                }
+            ]
+        },
+        {
+            "type": "error",
+            "name": "AddressIsNotSet",
+            "inputs": []
+        },
+        {
+            "type": "error",
+            "name": "AmountDoesNotMeetTheValidatorsMinimumDelegationAmount",
+            "inputs": [
+                {
+                    "type": "uint256",
+                    "name": "amount"
+                },
+                {
+                    "type": "uint256",
+                    "name": "minimum"
+                }
+            ]
+        },
+        {
+            "type": "error",
+            "name": "NoPermissionsToUnlinkNode",
+            "inputs": [
+                {
+                    "type": "uint256",
+                    "name": "validatorId"
+                },
+                {
+                    "type": "address",
+                    "name": "nodeAddress"
+                }
+            ]
+        },
+        {
+            "type": "error",
+            "name": "NodeAddressIsAValidator",
+            "inputs": [
+                {
+                    "type": "address",
+                    "name": "nodeAddress"
+                },
+                {
+                    "type": "uint256",
+                    "name": "validatorId"
+                }
+            ]
+        },
+        {
+            "type": "error",
+            "name": "NodeAddressIsNotAssignedToValidator",
+            "inputs": [
+                {
+                    "type": "address",
+                    "name": "nodeAddress"
+                }
+            ]
+        },
+        {
+            "type": "error",
+            "name": "RoleRequired",
+            "inputs": [
+                {
+                    "type": "bytes32",
+                    "name": "role"
+                }
+            ]
+        },
+        {
+            "type": "error",
+            "name": "SenderHasToBeEqualToRequestedAddress",
+            "inputs": [
+                {
+                    "type": "address",
+                    "name": "sender"
+                },
+                {
+                    "type": "address",
+                    "name": "requestedAddress"
+                }
+            ]
+        },
+        {
+            "type": "error",
+            "name": "ValidatorAddressDoesNotExist",
+            "inputs": [
+                {
+                    "type": "address",
+                    "name": "validatorAddress"
+                }
+            ]
+        },
+        {
+            "type": "error",
+            "name": "ValidatorCannotOverrideNodeAddress",
+            "inputs": [
+                {
+                    "type": "uint256",
+                    "name": "validatorId"
+                },
+                {
+                    "type": "address",
+                    "name": "nodeAddress"
+                }
+            ]
+        },
+        {
+            "type": "error",
+            "name": "ValidatorDoesNotExist",
+            "inputs": [
+                {
+                    "type": "uint256",
+                    "name": "id"
+                }
+            ]
+        },
+        {
+            "type": "error",
+            "name": "ValidatorIsAlreadyDisabled",
+            "inputs": [
+                {
+                    "type": "uint256",
+                    "name": "validatorId"
+                }
+            ]
+        },
+        {
+            "type": "error",
+            "name": "ValidatorIsAlreadyEnabled",
+            "inputs": [
+                {
+                    "type": "uint256",
+                    "name": "validatorId"
+                }
+            ]
+        },
+        {
+            "type": "error",
+            "name": "ValidatorIsNotAuthorized",
+            "inputs": [
+                {
+                    "type": "uint256",
+                    "name": "validatorId"
+                }
+            ]
+        },
+        {
+            "type": "error",
+            "name": "ValidatorIsNotCurrentlyAcceptingNewRequests",
+            "inputs": [
+                {
+                    "type": "uint256",
+                    "name": "validatorId"
+                }
+            ]
+        },
+        {
+            "type": "error",
+            "name": "WrongFeeValue",
+            "inputs": [
+                {
+                    "type": "uint256",
+                    "name": "value"
+                }
+            ]
+        },
+        {
+            "type": "error",
+            "name": "WrongSignature",
+            "inputs": []
+        },
         {
             "type": "event",
             "anonymous": false,
@@ -4280,7 +4505,7 @@
             ]
         }
     ],
-    "constants_holder_address": "0xE07D9109D8dDacDf72E8C6539BdB5a70BbB150E8",
+    "constants_holder_address": "0xeec13B0D15a2890bee5d9063B8241e916b5ad9C7",
     "constants_holder_abi": [
         {
             "type": "event",
@@ -5278,8 +5503,161 @@
             "outputs": []
         }
     ],
-    "nodes_address": "0xEed29DD217b466687248a542D438cB78D95b6628",
+    "nodes_address": "0xA70E6286c6B39DB0294D49988656a4fFF1d496Cd",
     "nodes_abi": [
+        {
+            "type": "error",
+            "name": "IpAndPublicIpIsDifferent",
+            "inputs": [
+                {
+                    "type": "bytes4",
+                    "name": "ip"
+                },
+                {
+                    "type": "bytes4",
+                    "name": "publicIp"
+                }
+            ]
+        },
+        {
+            "type": "error",
+            "name": "IpIsNotAvailable",
+            "inputs": [
+                {
+                    "type": "bytes4",
+                    "name": "ip"
+                }
+            ]
+        },
+        {
+            "type": "error",
+            "name": "MinimumStakingRequirementIsNotMet",
+            "inputs": []
+        },
+        {
+            "type": "error",
+            "name": "NameIsAlreadyRegistered",
+            "inputs": [
+                {
+                    "type": "string",
+                    "name": "name"
+                }
+            ]
+        },
+        {
+            "type": "error",
+            "name": "NodeDoesNotExist",
+            "inputs": [
+                {
+                    "type": "uint256",
+                    "name": "nodeId"
+                }
+            ]
+        },
+        {
+            "type": "error",
+            "name": "NodeDoesNotExistForValidator",
+            "inputs": [
+                {
+                    "type": "uint256",
+                    "name": "validatorId"
+                },
+                {
+                    "type": "uint256",
+                    "name": "nodeId"
+                }
+            ]
+        },
+        {
+            "type": "error",
+            "name": "NodeIsNotActive",
+            "inputs": [
+                {
+                    "type": "uint256",
+                    "name": "nodeId"
+                }
+            ]
+        },
+        {
+            "type": "error",
+            "name": "NodeIsNotInMaintenance",
+            "inputs": [
+                {
+                    "type": "uint256",
+                    "name": "nodeId"
+                }
+            ]
+        },
+        {
+            "type": "error",
+            "name": "NodeIsNotLeaving",
+            "inputs": [
+                {
+                    "type": "uint256",
+                    "name": "nodeId"
+                }
+            ]
+        },
+        {
+            "type": "error",
+            "name": "NodeNotFound",
+            "inputs": []
+        },
+        {
+            "type": "error",
+            "name": "PortIsNotSet",
+            "inputs": []
+        },
+        {
+            "type": "error",
+            "name": "PublicKeyIsIncorrect",
+            "inputs": [
+                {
+                    "type": "bytes32[2]",
+                    "name": "key"
+                }
+            ]
+        },
+        {
+            "type": "error",
+            "name": "RoleRequired",
+            "inputs": [
+                {
+                    "type": "bytes32",
+                    "name": "role"
+                }
+            ]
+        },
+        {
+            "type": "error",
+            "name": "SenderIsNotPermitted",
+            "inputs": [
+                {
+                    "type": "address",
+                    "name": "sender"
+                }
+            ]
+        },
+        {
+            "type": "error",
+            "name": "ValidatorDoesNotExist",
+            "inputs": [
+                {
+                    "type": "uint256",
+                    "name": "id"
+                }
+            ]
+        },
+        {
+            "type": "error",
+            "name": "ValidatorIsNotAuthorized",
+            "inputs": [
+                {
+                    "type": "uint256",
+                    "name": "validatorId"
+                }
+            ]
+        },
         {
             "type": "event",
             "anonymous": false,
@@ -5758,6 +6136,25 @@
                 {
                     "type": "uint256[]",
                     "name": "activeNodeIds"
+                }
+            ]
+        },
+        {
+            "type": "function",
+            "name": "getFreeSpace",
+            "constant": true,
+            "stateMutability": "view",
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "uint256",
+                    "name": "nodeIndex"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "uint8",
+                    "name": "freeSpace"
                 }
             ]
         },
@@ -6293,6 +6690,25 @@
         },
         {
             "type": "function",
+            "name": "isNodeVisible",
+            "constant": true,
+            "stateMutability": "view",
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "uint256",
+                    "name": "nodeIndex"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "bool",
+                    "name": "visible"
+                }
+            ]
+        },
+        {
+            "type": "function",
             "name": "isTimeForReward",
             "constant": true,
             "stateMutability": "view",
@@ -6719,7 +7135,7 @@
             ]
         }
     ],
-    "node_rotation_address": "0xb12e2fb80568DEDB5AdB995aCa57DfBa60049Ad5",
+    "node_rotation_address": "0x234a9E40fA3F5bDC0799bad23f3503ffA45a69E2",
     "node_rotation_abi": [
         {
             "type": "event",
@@ -7262,7 +7678,7 @@
             ]
         }
     ],
-    "schains_internal_address": "0x25D52b1ae49492BCBD0d72C43488573af7cd1870",
+    "schains_internal_address": "0x5144C8095Be51386F57DE8707bF26059BA51C04B",
     "schains_internal_abi": [
         {
             "type": "event",
@@ -8726,8 +9142,131 @@
             ]
         }
     ],
-    "schains_address": "0x343a11844FD74575Cb943ce3bf8b1Ace1bC56F15",
+    "schains_address": "0xBA47522f2034F6926515F3b2ab1135819d8F0E27",
     "schains_abi": [
+        {
+            "type": "error",
+            "name": "DkgWasNotFailed",
+            "inputs": []
+        },
+        {
+            "type": "error",
+            "name": "NoFreeNodes",
+            "inputs": []
+        },
+        {
+            "type": "error",
+            "name": "NodeDoesNotContainGivenSchain",
+            "inputs": [
+                {
+                    "type": "uint256",
+                    "name": "node"
+                },
+                {
+                    "type": "bytes32",
+                    "name": "schain"
+                }
+            ]
+        },
+        {
+            "type": "error",
+            "name": "NotEnoughFunds",
+            "inputs": []
+        },
+        {
+            "type": "error",
+            "name": "OptionIsAlreadySet",
+            "inputs": [
+                {
+                    "type": "string",
+                    "name": "optionName"
+                }
+            ]
+        },
+        {
+            "type": "error",
+            "name": "OptionIsNotSet",
+            "inputs": [
+                {
+                    "type": "bytes32",
+                    "name": "schainHash"
+                },
+                {
+                    "type": "bytes32",
+                    "name": "optionHash"
+                }
+            ]
+        },
+        {
+            "type": "error",
+            "name": "OptionRemovingError",
+            "inputs": [
+                {
+                    "type": "bytes32",
+                    "name": "optionHash"
+                }
+            ]
+        },
+        {
+            "type": "error",
+            "name": "OriginatorIsAContract",
+            "inputs": [
+                {
+                    "type": "address",
+                    "name": "originator"
+                }
+            ]
+        },
+        {
+            "type": "error",
+            "name": "OriginatorIsNotProvided",
+            "inputs": []
+        },
+        {
+            "type": "error",
+            "name": "RoleRequired",
+            "inputs": [
+                {
+                    "type": "bytes32",
+                    "name": "role"
+                }
+            ]
+        },
+        {
+            "type": "error",
+            "name": "SchainDoesNotExist",
+            "inputs": [
+                {
+                    "type": "bytes32",
+                    "name": "schainHash"
+                }
+            ]
+        },
+        {
+            "type": "error",
+            "name": "SchainIsCreatedTooEarly",
+            "inputs": []
+        },
+        {
+            "type": "error",
+            "name": "SchainLifetimeIsTooSmall",
+            "inputs": []
+        },
+        {
+            "type": "error",
+            "name": "SchainNameIsNotAvailable",
+            "inputs": [
+                {
+                    "type": "string",
+                    "name": "schainName"
+                }
+            ]
+        },
+        {
+            "type": "error",
+            "name": "SenderIsNotTheOwnerOfTheSchain",
+            "inputs": []
+        },
         {
             "type": "event",
             "anonymous": false,
@@ -8909,8 +9448,7 @@
                 },
                 {
                     "type": "uint256[]",
-                    "name": "nodesInGroup",
-                    "indexed": false
+                    "name": "nodesInGroup"
                 }
             ]
         },
@@ -9335,7 +9873,7 @@
             ]
         }
     ],
-    "decryption_address": "0xa81C2a1c5C9871920af44C1f41e9c5E78343ee99",
+    "decryption_address": "0xfB51Cf3a2266F562845Efdc0d53f3C2549e16202",
     "decryption_abi": [
         {
             "type": "function",
@@ -9384,7 +9922,7 @@
             ]
         }
     ],
-    "e_c_d_h_address": "0x215a6cB35380Cd0197aE15c3484f9EEd5fADf3AA",
+    "e_c_d_h_address": "0x869898a5B211fC02491f7285788f5569E32d109b",
     "e_c_d_h_abi": [
         {
             "type": "function",
@@ -9721,7 +10259,7 @@
             ]
         }
     ],
-    "key_storage_address": "0x62db8E0fCca6D71991bA1b1cB6A8A4E5fa7b64b0",
+    "key_storage_address": "0x4580f11b41812A631C5Ea9A1149C8a9f6958c62a",
     "key_storage_abi": [
         {
             "type": "event",
@@ -10189,7 +10727,7 @@
             "outputs": []
         }
     ],
-    "skale_d_k_g_address": "0x6aFd5F6d21150628e26c326B7641b0A43D5C016b",
+    "skale_d_k_g_address": "0x3551D7fCc2148516aA8dbC8aD9311D2D075937cf",
     "skale_d_k_g_abi": [
         {
             "type": "event",
@@ -10238,7 +10776,6 @@
                 {
                     "type": "tuple[]",
                     "name": "verificationVector",
-                    "indexed": false,
                     "components": [
                         {
                             "type": "tuple",
@@ -10273,7 +10810,6 @@
                 {
                     "type": "tuple[]",
                     "name": "secretKeyContribution",
-                    "indexed": false,
                     "components": [
                         {
                             "type": "bytes32[2]",
@@ -11389,6 +11925,25 @@
         },
         {
             "type": "function",
+            "name": "pendingToBeReplaced",
+            "constant": true,
+            "stateMutability": "view",
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "bytes32",
+                    "name": ""
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "uint256",
+                    "name": ""
+                }
+            ]
+        },
+        {
+            "type": "function",
             "name": "preResponse",
             "constant": false,
             "payable": false,
@@ -11499,6 +12054,19 @@
                 {
                     "type": "address",
                     "name": "account"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "type": "function",
+            "name": "resetPendingToBeReplaced",
+            "constant": false,
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "bytes32",
+                    "name": "schainHash"
                 }
             ],
             "outputs": []
@@ -11625,7 +12193,7 @@
             ]
         }
     ],
-    "skale_verifier_address": "0x2f57d1a1A31e0135e9d1418209b53798857567a2",
+    "skale_verifier_address": "0x5E876e95395fE75779d6B72B5a344CD9947CEE9D",
     "skale_verifier_abi": [
         {
             "type": "event",
@@ -11939,7 +12507,7 @@
             ]
         }
     ],
-    "skale_manager_address": "0xA1113149B9F933076fC9a70e5330F60B0bDDbd85",
+    "skale_manager_address": "0x31c8e70393e75931F3D03825ecc2d4eB4469ed00",
     "skale_manager_abi": [
         {
             "type": "event",
@@ -12433,336 +13001,7 @@
             ]
         }
     ],
-    "pricing_address": "0x9828993F4f7E6c8139DF9c08c5Ae967dBdA0624D",
-    "pricing_abi": [
-        {
-            "type": "event",
-            "anonymous": false,
-            "name": "Initialized",
-            "inputs": [
-                {
-                    "type": "uint8",
-                    "name": "version",
-                    "indexed": false
-                }
-            ]
-        },
-        {
-            "type": "event",
-            "anonymous": false,
-            "name": "RoleGranted",
-            "inputs": [
-                {
-                    "type": "bytes32",
-                    "name": "role",
-                    "indexed": true
-                },
-                {
-                    "type": "address",
-                    "name": "account",
-                    "indexed": true
-                },
-                {
-                    "type": "address",
-                    "name": "sender",
-                    "indexed": true
-                }
-            ]
-        },
-        {
-            "type": "event",
-            "anonymous": false,
-            "name": "RoleRevoked",
-            "inputs": [
-                {
-                    "type": "bytes32",
-                    "name": "role",
-                    "indexed": true
-                },
-                {
-                    "type": "address",
-                    "name": "account",
-                    "indexed": true
-                },
-                {
-                    "type": "address",
-                    "name": "sender",
-                    "indexed": true
-                }
-            ]
-        },
-        {
-            "type": "function",
-            "name": "DEFAULT_ADMIN_ROLE",
-            "constant": true,
-            "stateMutability": "view",
-            "payable": false,
-            "inputs": [],
-            "outputs": [
-                {
-                    "type": "bytes32",
-                    "name": ""
-                }
-            ]
-        },
-        {
-            "type": "function",
-            "name": "INITIAL_PRICE",
-            "constant": true,
-            "stateMutability": "view",
-            "payable": false,
-            "inputs": [],
-            "outputs": [
-                {
-                    "type": "uint256",
-                    "name": ""
-                }
-            ]
-        },
-        {
-            "type": "function",
-            "name": "adjustPrice",
-            "constant": false,
-            "payable": false,
-            "inputs": [],
-            "outputs": []
-        },
-        {
-            "type": "function",
-            "name": "checkAllNodes",
-            "constant": false,
-            "payable": false,
-            "inputs": [],
-            "outputs": []
-        },
-        {
-            "type": "function",
-            "name": "contractManager",
-            "constant": true,
-            "stateMutability": "view",
-            "payable": false,
-            "inputs": [],
-            "outputs": [
-                {
-                    "type": "address",
-                    "name": ""
-                }
-            ]
-        },
-        {
-            "type": "function",
-            "name": "getRoleAdmin",
-            "constant": true,
-            "stateMutability": "view",
-            "payable": false,
-            "inputs": [
-                {
-                    "type": "bytes32",
-                    "name": "role"
-                }
-            ],
-            "outputs": [
-                {
-                    "type": "bytes32",
-                    "name": ""
-                }
-            ]
-        },
-        {
-            "type": "function",
-            "name": "getRoleMember",
-            "constant": true,
-            "stateMutability": "view",
-            "payable": false,
-            "inputs": [
-                {
-                    "type": "bytes32",
-                    "name": "role"
-                },
-                {
-                    "type": "uint256",
-                    "name": "index"
-                }
-            ],
-            "outputs": [
-                {
-                    "type": "address",
-                    "name": ""
-                }
-            ]
-        },
-        {
-            "type": "function",
-            "name": "getRoleMemberCount",
-            "constant": true,
-            "stateMutability": "view",
-            "payable": false,
-            "inputs": [
-                {
-                    "type": "bytes32",
-                    "name": "role"
-                }
-            ],
-            "outputs": [
-                {
-                    "type": "uint256",
-                    "name": ""
-                }
-            ]
-        },
-        {
-            "type": "function",
-            "name": "getTotalLoadPercentage",
-            "constant": true,
-            "stateMutability": "view",
-            "payable": false,
-            "inputs": [],
-            "outputs": [
-                {
-                    "type": "uint256",
-                    "name": "load"
-                }
-            ]
-        },
-        {
-            "type": "function",
-            "name": "grantRole",
-            "constant": false,
-            "payable": false,
-            "inputs": [
-                {
-                    "type": "bytes32",
-                    "name": "role"
-                },
-                {
-                    "type": "address",
-                    "name": "account"
-                }
-            ],
-            "outputs": []
-        },
-        {
-            "type": "function",
-            "name": "hasRole",
-            "constant": true,
-            "stateMutability": "view",
-            "payable": false,
-            "inputs": [
-                {
-                    "type": "bytes32",
-                    "name": "role"
-                },
-                {
-                    "type": "address",
-                    "name": "account"
-                }
-            ],
-            "outputs": [
-                {
-                    "type": "bool",
-                    "name": ""
-                }
-            ]
-        },
-        {
-            "type": "function",
-            "name": "initNodes",
-            "constant": false,
-            "payable": false,
-            "inputs": [],
-            "outputs": []
-        },
-        {
-            "type": "function",
-            "name": "initialize",
-            "constant": false,
-            "payable": false,
-            "inputs": [
-                {
-                    "type": "address",
-                    "name": "newContractsAddress"
-                }
-            ],
-            "outputs": []
-        },
-        {
-            "type": "function",
-            "name": "lastUpdated",
-            "constant": true,
-            "stateMutability": "view",
-            "payable": false,
-            "inputs": [],
-            "outputs": [
-                {
-                    "type": "uint256",
-                    "name": ""
-                }
-            ]
-        },
-        {
-            "type": "function",
-            "name": "price",
-            "constant": true,
-            "stateMutability": "view",
-            "payable": false,
-            "inputs": [],
-            "outputs": [
-                {
-                    "type": "uint256",
-                    "name": ""
-                }
-            ]
-        },
-        {
-            "type": "function",
-            "name": "renounceRole",
-            "constant": false,
-            "payable": false,
-            "inputs": [
-                {
-                    "type": "bytes32",
-                    "name": "role"
-                },
-                {
-                    "type": "address",
-                    "name": "account"
-                }
-            ],
-            "outputs": []
-        },
-        {
-            "type": "function",
-            "name": "revokeRole",
-            "constant": false,
-            "payable": false,
-            "inputs": [
-                {
-                    "type": "bytes32",
-                    "name": "role"
-                },
-                {
-                    "type": "address",
-                    "name": "account"
-                }
-            ],
-            "outputs": []
-        },
-        {
-            "type": "function",
-            "name": "totalNodes",
-            "constant": true,
-            "stateMutability": "view",
-            "payable": false,
-            "inputs": [],
-            "outputs": [
-                {
-                    "type": "uint256",
-                    "name": ""
-                }
-            ]
-        }
-    ],
-    "bounty_v2_address": "0x37526D33214a20F60bCF236c02377CB3fA405aB0",
+    "bounty_v2_address": "0xA017D75f97a4C4209e40fAFaa6d01285D0cF90Da",
     "bounty_v2_abi": [
         {
             "type": "event",
@@ -13346,7 +13585,7 @@
             "outputs": []
         }
     ],
-    "wallets_address": "0x0eda9A6a263D7c69A489bA8e367647f1466dEdF0",
+    "wallets_address": "0x85C3474271309B7Eca2017458798b97A0382B9D4",
     "wallets_abi": [
         {
             "type": "event",
@@ -13882,9 +14121,13 @@
                 }
             ],
             "outputs": []
+        },
+        {
+            "type": "receive",
+            "stateMutability": "payable"
         }
     ],
-    "sync_manager_address": "0xB8B1352E08576f52E3b8d9849fcd27fa9aAA70b5",
+    "sync_manager_address": "0x53FCCfcddD80F8e25Cf59982570672e21F99853E",
     "sync_manager_abi": [
         {
             "type": "event",
@@ -14296,7 +14539,481 @@
             "outputs": []
         }
     ],
-    "time_helpers_with_debug_address": "0xEDf6016c3E965d6732b2711505029Fb54D760Cca",
+    "paymaster_controller_address": "0x81025D438824C3f94616B9507734C81bA2028791",
+    "paymaster_controller_abi": [
+        {
+            "type": "error",
+            "name": "EuropaChainHashIsNotSet",
+            "inputs": []
+        },
+        {
+            "type": "error",
+            "name": "IsNotContract",
+            "inputs": [
+                {
+                    "type": "address",
+                    "name": "account"
+                }
+            ]
+        },
+        {
+            "type": "error",
+            "name": "MarionetteAddressIsNotSet",
+            "inputs": []
+        },
+        {
+            "type": "error",
+            "name": "MessageProxyForMainnetAddressIsNotSet",
+            "inputs": []
+        },
+        {
+            "type": "error",
+            "name": "PaymasterAddressIsNotSet",
+            "inputs": []
+        },
+        {
+            "type": "error",
+            "name": "RoleRequired",
+            "inputs": [
+                {
+                    "type": "bytes32",
+                    "name": "role"
+                }
+            ]
+        },
+        {
+            "type": "event",
+            "anonymous": false,
+            "name": "Initialized",
+            "inputs": [
+                {
+                    "type": "uint8",
+                    "name": "version",
+                    "indexed": false
+                }
+            ]
+        },
+        {
+            "type": "event",
+            "anonymous": false,
+            "name": "RoleGranted",
+            "inputs": [
+                {
+                    "type": "bytes32",
+                    "name": "role",
+                    "indexed": true
+                },
+                {
+                    "type": "address",
+                    "name": "account",
+                    "indexed": true
+                },
+                {
+                    "type": "address",
+                    "name": "sender",
+                    "indexed": true
+                }
+            ]
+        },
+        {
+            "type": "event",
+            "anonymous": false,
+            "name": "RoleRevoked",
+            "inputs": [
+                {
+                    "type": "bytes32",
+                    "name": "role",
+                    "indexed": true
+                },
+                {
+                    "type": "address",
+                    "name": "account",
+                    "indexed": true
+                },
+                {
+                    "type": "address",
+                    "name": "sender",
+                    "indexed": true
+                }
+            ]
+        },
+        {
+            "type": "function",
+            "name": "DEFAULT_ADMIN_ROLE",
+            "constant": true,
+            "stateMutability": "view",
+            "payable": false,
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "bytes32",
+                    "name": ""
+                }
+            ]
+        },
+        {
+            "type": "function",
+            "name": "PAYMASTER_SETTER_ROLE",
+            "constant": true,
+            "stateMutability": "view",
+            "payable": false,
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "bytes32",
+                    "name": ""
+                }
+            ]
+        },
+        {
+            "type": "function",
+            "name": "addSchain",
+            "constant": false,
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "string",
+                    "name": "name"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "type": "function",
+            "name": "addValidator",
+            "constant": false,
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "uint256",
+                    "name": "validatorId"
+                },
+                {
+                    "type": "address",
+                    "name": "validatorAddress"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "type": "function",
+            "name": "contractManager",
+            "constant": true,
+            "stateMutability": "view",
+            "payable": false,
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "address",
+                    "name": ""
+                }
+            ]
+        },
+        {
+            "type": "function",
+            "name": "getRoleAdmin",
+            "constant": true,
+            "stateMutability": "view",
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "bytes32",
+                    "name": "role"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "bytes32",
+                    "name": ""
+                }
+            ]
+        },
+        {
+            "type": "function",
+            "name": "getRoleMember",
+            "constant": true,
+            "stateMutability": "view",
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "bytes32",
+                    "name": "role"
+                },
+                {
+                    "type": "uint256",
+                    "name": "index"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "address",
+                    "name": ""
+                }
+            ]
+        },
+        {
+            "type": "function",
+            "name": "getRoleMemberCount",
+            "constant": true,
+            "stateMutability": "view",
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "bytes32",
+                    "name": "role"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "uint256",
+                    "name": ""
+                }
+            ]
+        },
+        {
+            "type": "function",
+            "name": "grantRole",
+            "constant": false,
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "bytes32",
+                    "name": "role"
+                },
+                {
+                    "type": "address",
+                    "name": "account"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "type": "function",
+            "name": "hasRole",
+            "constant": true,
+            "stateMutability": "view",
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "bytes32",
+                    "name": "role"
+                },
+                {
+                    "type": "address",
+                    "name": "account"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "bool",
+                    "name": ""
+                }
+            ]
+        },
+        {
+            "type": "function",
+            "name": "ima",
+            "constant": true,
+            "stateMutability": "view",
+            "payable": false,
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "address",
+                    "name": ""
+                }
+            ]
+        },
+        {
+            "type": "function",
+            "name": "initialize",
+            "constant": false,
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "address",
+                    "name": "contractManagerAddress"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "type": "function",
+            "name": "marionette",
+            "constant": true,
+            "stateMutability": "view",
+            "payable": false,
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "address",
+                    "name": ""
+                }
+            ]
+        },
+        {
+            "type": "function",
+            "name": "paymaster",
+            "constant": true,
+            "stateMutability": "view",
+            "payable": false,
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "address",
+                    "name": ""
+                }
+            ]
+        },
+        {
+            "type": "function",
+            "name": "paymasterChainHash",
+            "constant": true,
+            "stateMutability": "view",
+            "payable": false,
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "bytes32",
+                    "name": ""
+                }
+            ]
+        },
+        {
+            "type": "function",
+            "name": "removeSchain",
+            "constant": false,
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "bytes32",
+                    "name": "schainHash"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "type": "function",
+            "name": "renounceRole",
+            "constant": false,
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "bytes32",
+                    "name": "role"
+                },
+                {
+                    "type": "address",
+                    "name": "account"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "type": "function",
+            "name": "revokeRole",
+            "constant": false,
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "bytes32",
+                    "name": "role"
+                },
+                {
+                    "type": "address",
+                    "name": "account"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "type": "function",
+            "name": "setImaAddress",
+            "constant": false,
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "address",
+                    "name": "imaAddress"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "type": "function",
+            "name": "setMarionetteAddress",
+            "constant": false,
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "address",
+                    "name": "marionetteAddress"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "type": "function",
+            "name": "setNodesAmount",
+            "constant": false,
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "uint256",
+                    "name": "validatorId"
+                },
+                {
+                    "type": "uint256",
+                    "name": "nodesAmount"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "type": "function",
+            "name": "setPaymasterAddress",
+            "constant": false,
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "address",
+                    "name": "paymasterAddress"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "type": "function",
+            "name": "setPaymasterChainHash",
+            "constant": false,
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "bytes32",
+                    "name": "chainHash"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "type": "function",
+            "name": "setValidatorAddress",
+            "constant": false,
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "uint256",
+                    "name": "validatorId"
+                },
+                {
+                    "type": "address",
+                    "name": "validatorAddress"
+                }
+            ],
+            "outputs": []
+        }
+    ],
+    "time_helpers_with_debug_address": "0xa3F826FF90fB7132a9870F0C8f932100eAf3c784",
     "time_helpers_with_debug_abi": [
         {
             "type": "event",
@@ -14547,10 +15264,11 @@
             "outputs": []
         }
     ],
-    "skale_token_address": "0xA7f1a7d8988e4657531981dB275bBFe2af22B1eD",
+    "skale_token_address": "0xD39B0F30Af7eA9b9C95cc7568186446106d411fa",
     "skale_token_abi": [
         {
             "type": "constructor",
+            "stateMutability": "undefined",
             "payable": false,
             "inputs": [
                 {
