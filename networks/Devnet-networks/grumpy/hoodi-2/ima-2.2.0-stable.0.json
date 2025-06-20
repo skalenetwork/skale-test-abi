@@ -1,6 +1,6 @@
 {
-    "message_proxy_for_mainnet_address": "0xDdbBd1d7d6A1859A1869dEE1CB3B22Ef0FdF96BC",
-    "message_proxy_for_mainnet_abi": [
+    "message_proxy_mainnet_address": "0xDdbBd1d7d6A1859A1869dEE1CB3B22Ef0FdF96BC",
+    "message_proxy_mainnet_abi": [
         {
             "type": "event",
             "anonymous": false,
