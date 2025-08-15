@@ -1,5 +1,5 @@
 {
-    "contract_manager_address": "0xa30c1C4B2e3a81e1B60484c0560815b6872744a2",
+    "contract_manager_address": "0x876bAFE9210c1F575cfF2D4B4622318B96CD1E5e",
     "contract_manager_abi": [
         {
             "type": "event",
@@ -370,7 +370,7 @@
             "outputs": []
         }
     ],
-    "delegation_controller_address": "0x82b124e88DB209dfb63b8628e49b6a990011bFdb",
+    "delegation_controller_address": "0xed737335fCff6104295AF36991F693B94b59C0C1",
     "delegation_controller_abi": [
         {
             "type": "event",
@@ -1283,7 +1283,7 @@
             "outputs": []
         }
     ],
-    "delegation_period_manager_address": "0x6f52AD442dC24E8eB6d8D5f9761997B77cfFfCE7",
+    "delegation_period_manager_address": "0x346c063fb40583De555a93dC60ea5B10102010C3",
     "delegation_period_manager_abi": [
         {
             "type": "event",
@@ -1604,7 +1604,7 @@
             ]
         }
     ],
-    "distributor_address": "0xB4efb334efd73E30723E0DADecf343Fe59874bb6",
+    "distributor_address": "0x9cb14ab5e8194d0f7Ae57FdA01f4129Dd3bF9fA7",
     "distributor_abi": [
         {
             "type": "error",
@@ -2082,7 +2082,7 @@
             "outputs": []
         }
     ],
-    "punisher_address": "0xa2aeE4B3eC0f7B0EA994D3CC907dfA9725dbE694",
+    "punisher_address": "0x621A8c39821a7Cc7e0780A4775459f8b2F25f27C",
     "punisher_abi": [
         {
             "type": "event",
@@ -2452,7 +2452,7 @@
             "outputs": []
         }
     ],
-    "slashing_table_address": "0xE019D1d084476f666AA7dee1344Df8b7d1cB5353",
+    "slashing_table_address": "0xB29AA8799204BfBd330801E994Fd051b0254B4A2",
     "slashing_table_abi": [
         {
             "type": "event",
@@ -2759,7 +2759,7 @@
             "outputs": []
         }
     ],
-    "time_helpers_address": "0x0D4129AAB1a81d2C3968A4cE247a4fd683c57DE1",
+    "time_helpers_address": "0xD1ff730569770cE508Ea55FdAf169A87Df665253",
     "time_helpers_abi": [
         {
             "type": "function",
@@ -2925,7 +2925,7 @@
             ]
         }
     ],
-    "token_state_address": "0xBe563b26e30b569863d8851aCDC1b80ef931D8f7",
+    "token_state_address": "0xA0AC6d81761aabcFB5Ec490a6e4B1Ef980985166",
     "token_state_abi": [
         {
             "type": "event",
@@ -3260,7 +3260,7 @@
             "outputs": []
         }
     ],
-    "validator_service_address": "0xCFCAd7A71d1Ebe143a2185e0DE3b704A6503c805",
+    "validator_service_address": "0x0DBD63e21482286ce6b10A237Ac10ebb4b371BA5",
     "validator_service_abi": [
         {
             "type": "error",
@@ -4505,7 +4505,7 @@
             ]
         }
     ],
-    "constants_holder_address": "0xF761BF4A5Db114208AB969A16176f58637bc86cF",
+    "constants_holder_address": "0xB96A792A2148410Af54097563Cff958B0c604d9a",
     "constants_holder_abi": [
         {
             "type": "event",
@@ -5503,7 +5503,7 @@
             "outputs": []
         }
     ],
-    "nodes_address": "0x56E10a3925E862003Fb3F2509767c113e01c0750",
+    "nodes_address": "0x738c01805e4b6aA97e1E4e0Ea4Fd2223791c2D0E",
     "nodes_abi": [
         {
             "type": "error",
@@ -7135,7 +7135,7 @@
             ]
         }
     ],
-    "node_rotation_address": "0xa6c19b8eD6D70Eb220f9a02c46813930F14B9746",
+    "node_rotation_address": "0x4b2BdE7E7c96f1EB6ec80bF98e60F4Df780F889b",
     "node_rotation_abi": [
         {
             "type": "event",
@@ -7678,7 +7678,7 @@
             ]
         }
     ],
-    "schains_internal_address": "0xaBC25502D0Be8230916A6293E7645FE1126cD3c5",
+    "schains_internal_address": "0xBDBa6ddEb578F186d623cF3422De5d667F8010B0",
     "schains_internal_abi": [
         {
             "type": "event",
@@ -9142,7 +9142,7 @@
             ]
         }
     ],
-    "schains_address": "0x9e5949Bc6BeD45E2E6495baa3D2834a050dB4160",
+    "schains_address": "0xA3f96ADeC141Cb4f0B370e18e26a7B42ffe181C8",
     "schains_abi": [
         {
             "type": "error",
@@ -9873,7 +9873,7 @@
             ]
         }
     ],
-    "decryption_address": "0x5Da191927dE4B5CcCee9c25cC1E032Ffaf164d68",
+    "decryption_address": "0xe05E42Ae460f8cCAa20EA541e5a22f0B037c5400",
     "decryption_abi": [
         {
             "type": "function",
@@ -9922,7 +9922,7 @@
             ]
         }
     ],
-    "e_c_d_h_address": "0x8c0B5B82b8d381190CC022F474Baf29439C6c678",
+    "e_c_d_h_address": "0x9abB25063565da87b9275F2F2A9f0EB3eaBC4302",
     "e_c_d_h_abi": [
         {
             "type": "function",
@@ -10259,7 +10259,7 @@
             ]
         }
     ],
-    "key_storage_address": "0xf6D36Dc873678FDd324A2730fC053173bCF5CbC4",
+    "key_storage_address": "0x587b303387e704dE91eF8E8B04697F9e0e4eB88A",
     "key_storage_abi": [
         {
             "type": "event",
@@ -10727,7 +10727,7 @@
             "outputs": []
         }
     ],
-    "skale_d_k_g_address": "0xbFb52AC5FeDB448E593BCb8487999d1855291057",
+    "skale_d_k_g_address": "0xE636f7E6ce1e6F66826ea5a7Cf7c5cfF0A15bd36",
     "skale_d_k_g_abi": [
         {
             "type": "event",
@@ -12193,7 +12193,7 @@
             ]
         }
     ],
-    "skale_verifier_address": "0xD336b0E2836D46b5136281cBEADF375F3AA34f2e",
+    "skale_verifier_address": "0x68F84739615ff381999BaCf70636b0fDf8aC06b2",
     "skale_verifier_abi": [
         {
             "type": "event",
@@ -12507,7 +12507,7 @@
             ]
         }
     ],
-    "skale_manager_address": "0x8aBF83Bc14a997B9814DdAfCf1E9c7919aA60FE0",
+    "skale_manager_address": "0xCF64102fA0DA4A999D12755b4E9E94Ad5A65d426",
     "skale_manager_abi": [
         {
             "type": "event",
@@ -13001,7 +13001,7 @@
             ]
         }
     ],
-    "bounty_v2_address": "0xE32795CB4F97c28C02503a95e3d9B72A73Ee438B",
+    "bounty_v2_address": "0xf61f8e33a48adD19F9381feAf6E1BeF08Df906B1",
     "bounty_v2_abi": [
         {
             "type": "event",
@@ -13585,7 +13585,7 @@
             "outputs": []
         }
     ],
-    "wallets_address": "0xC5743496c8720b36B4c7608d130884EE9E58AAaF",
+    "wallets_address": "0x18ec96a5Bc584Cb884F308881E924a08982bE78F",
     "wallets_abi": [
         {
             "type": "event",
@@ -14127,7 +14127,7 @@
             "stateMutability": "payable"
         }
     ],
-    "sync_manager_address": "0xf514E31957EcD79a3BbDee0747E8bc46eB218858",
+    "sync_manager_address": "0xd1a78e9e5fE063ce192c9F7D1381ABfD1133B988",
     "sync_manager_abi": [
         {
             "type": "event",
@@ -14539,7 +14539,7 @@
             "outputs": []
         }
     ],
-    "paymaster_controller_address": "0x63Cbfd8134ec84688D448Fe9d871C0Ab88Ea0d29",
+    "paymaster_controller_address": "0xF23Ed06d1dC21F33eAD2F1399C488AC40Ce8f51C",
     "paymaster_controller_abi": [
         {
             "type": "error",
@@ -15013,7 +15013,7 @@
             "outputs": []
         }
     ],
-    "time_helpers_with_debug_address": "0x353C9DD8bB0FaB84837fc6B9754468f693f20043",
+    "time_helpers_with_debug_address": "0xd1e060D8FFE40C2046B6fFcFF3De232bfD4C1D7c",
     "time_helpers_with_debug_abi": [
         {
             "type": "event",
@@ -15264,7 +15264,7 @@
             "outputs": []
         }
     ],
-    "skale_token_address": "0x01Db307e5e049a2b81124645f5268ECcaaa60880",
+    "skale_token_address": "0xf77C903A6a9106060abe174686c4650E6605Bebd",
     "skale_token_abi": [
         {
             "type": "constructor",
