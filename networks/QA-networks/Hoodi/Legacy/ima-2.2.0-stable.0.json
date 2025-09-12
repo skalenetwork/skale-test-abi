@@ -1,5 +1,5 @@
 {
-    "message_proxy_mainnet_address": "0x2fa45A5eED8Fbc4Fd19d39b6CE429ccCF1AD522D",
+    "message_proxy_mainnet_address": "0x518b7661F6Ef6170a5AB99eecC545621B81D054b",
     "message_proxy_mainnet_abi": [
         {
             "type": "event",
@@ -1314,7 +1314,7 @@
             ]
         }
     ],
-    "linker_address": "0x95B97Bc7d7a0c0dA6fA37a192aD2CAc989312ACD",
+    "linker_address": "0xA4BF07C070b39957FF2022b80EF026CC58B8028F",
     "linker_abi": [
         {
             "type": "event",
@@ -1913,7 +1913,7 @@
             ]
         }
     ],
-    "community_pool_address": "0xEb60A7Be56a2d1750c9257717871A00cA1D37ce3",
+    "community_pool_address": "0xAA786A859084519492F577b87f36a489F4A658fe",
     "community_pool_abi": [
         {
             "type": "event",
@@ -2701,7 +2701,7 @@
             "outputs": []
         }
     ],
-    "deposit_box_eth_address": "0x5F47e27A566f89CAB72fAF6dA354D3784bD4edf1",
+    "deposit_box_eth_address": "0x04D57b2747deAA94ef83db8D480a964D6916D19b",
     "deposit_box_eth_abi": [
         {
             "type": "event",
@@ -3462,7 +3462,7 @@
             "stateMutability": "payable"
         }
     ],
-    "deposit_box_erc20_address": "0x5973A97e3A75a6f7adC22c1D42955e612e2F28B7",
+    "deposit_box_erc20_address": "0xBb24c16f04965cc522dBAdF1F7af253d7E9656a3",
     "deposit_box_erc20_abi": [
         {
             "type": "error",
@@ -4836,7 +4836,7 @@
             "outputs": []
         }
     ],
-    "deposit_box_erc721_address": "0x6842b9fc80D0a7b0D14A7Fd156f27AFA855d5214",
+    "deposit_box_erc721_address": "0x8F140C7a8a9c465Ace578aF67A309122a89E5642",
     "deposit_box_erc721_abi": [
         {
             "type": "event",
@@ -5646,7 +5646,7 @@
             ]
         }
     ],
-    "deposit_box_erc1155_address": "0x815263EFC7b3aC3575eE6af9ed225F78C499C8D4",
+    "deposit_box_erc1155_address": "0x951C7c1b6a8D246c0E7f993767f9B2b4e7b7932e",
     "deposit_box_erc1155_abi": [
         {
             "type": "event",
@@ -6599,7 +6599,7 @@
             ]
         }
     ],
-    "deposit_box_erc721_with_metadata_address": "0xbfa08B6867c20652e2D6C7c7Ed703DC1035D7A75",
+    "deposit_box_erc721_with_metadata_address": "0x9D346f9cB6408534E7A953E08da382Bc776a5763",
     "deposit_box_erc721_with_metadata_abi": [
         {
             "type": "event",
