@@ -1,5 +1,5 @@
 {
-    "message_proxy_mainnet_address": "0x59db6B07643b9739ed81f02CAe9f4BD1095D58dc",
+    "message_proxy_mainnet_address": "0x2a3cbe62097F42d41008D3aec13A072335Be1D66",
     "message_proxy_mainnet_abi": [
         {
             "type": "event",
@@ -1314,7 +1314,7 @@
             ]
         }
     ],
-    "linker_address": "0x63175919BB01CACeA13A428e026d3B8009b1AA25",
+    "linker_address": "0xF91404C66C25677F37727aA15104E42cBd4818Cc",
     "linker_abi": [
         {
             "type": "event",
@@ -1913,7 +1913,7 @@
             ]
         }
     ],
-    "community_pool_address": "0x20b8e50583278151Cc16B9f4Ac05595B7752942f",
+    "community_pool_address": "0x0c7B71C21Cce925b3AFf9b1afC19e03107f4cDA4",
     "community_pool_abi": [
         {
             "type": "event",
@@ -2701,7 +2701,7 @@
             "outputs": []
         }
     ],
-    "deposit_box_eth_address": "0xC2c494D4EC9F82F5E7A37b0B0FD5f0E59d8C9e7a",
+    "deposit_box_eth_address": "0xaD923298538fFB056cbBBCF2E60c9e46353C1c71",
     "deposit_box_eth_abi": [
         {
             "type": "event",
@@ -3462,7 +3462,7 @@
             "stateMutability": "payable"
         }
     ],
-    "deposit_box_erc20_address": "0x0Bfb542E5ede792a72a76E318975F01395585c41",
+    "deposit_box_erc20_address": "0x2a3901D613401Cc4e30049bC26ceaeA59985F3FF",
     "deposit_box_erc20_abi": [
         {
             "type": "error",
@@ -3700,6 +3700,18 @@
             "type": "event",
             "anonymous": false,
             "name": "TransferSkipped",
+            "inputs": [
+                {
+                    "type": "uint256",
+                    "name": "id",
+                    "indexed": false
+                }
+            ]
+        },
+        {
+            "type": "event",
+            "anonymous": false,
+            "name": "TransferSucceeded",
             "inputs": [
                 {
                     "type": "uint256",
@@ -4836,7 +4848,7 @@
             "outputs": []
         }
     ],
-    "deposit_box_erc721_address": "0x7181dae9C899d9FBD6F7bE815eb0eC957Fa74604",
+    "deposit_box_erc721_address": "0xD693037C1b97961A93fC6935cc5e6DD1c88AE8BA",
     "deposit_box_erc721_abi": [
         {
             "type": "event",
@@ -5646,7 +5658,7 @@
             ]
         }
     ],
-    "deposit_box_erc1155_address": "0xbabc6a313D0C49B5D6fb45B8D905f0d5F4140FeB",
+    "deposit_box_erc1155_address": "0x4c37859Ad50F3BAdD50bF653d502b427b428e674",
     "deposit_box_erc1155_abi": [
         {
             "type": "event",
@@ -6599,7 +6611,7 @@
             ]
         }
     ],
-    "deposit_box_erc721_with_metadata_address": "0xD3c4A7c229dAb354d9b9bC93396cee8A77Cc125a",
+    "deposit_box_erc721_with_metadata_address": "0xF79bBd4Ef60563D678fAAc61CF25999E018ff2aD",
     "deposit_box_erc721_with_metadata_abi": [
         {
             "type": "event",
